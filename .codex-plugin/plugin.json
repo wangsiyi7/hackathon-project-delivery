@@ -1,0 +1,41 @@
+{
+  "name": "hackathon-project-delivery",
+  "version": "0.1.0",
+  "description": "A bilingual Codex workflow plugin for turning UCWS and general hackathon ideas into shipped apps, GitHub repositories, public demos, and copy-ready submission packages.",
+  "author": {
+    "name": "wangsiyi7",
+    "url": "https://github.com/wangsiyi7"
+  },
+  "homepage": "https://github.com/wangsiyi7/hackathon-project-delivery",
+  "repository": "https://github.com/wangsiyi7/hackathon-project-delivery",
+  "license": "MIT",
+  "keywords": [
+    "hackathon",
+    "ucws",
+    "codex",
+    "skill",
+    "delivery",
+    "github",
+    "deployment",
+    "submission"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Hackathon Project Delivery",
+    "shortDescription": "Ship hackathon apps with GitHub, demos, and proof.",
+    "longDescription": "A bilingual Codex workflow for researching hackathon requirements, shaping a product, building a working app, publishing to GitHub, deploying a public demo, preparing official submission fields, and verifying final readiness for UCWS and future hackathons.",
+    "developerName": "wangsiyi7",
+    "category": "Productivity",
+    "capabilities": [
+      "Write",
+      "Code",
+      "Deploy"
+    ],
+    "defaultPrompt": [
+      "Use $hackathon-project-delivery to turn this hackathon idea into a shipped submission.",
+      "Use $hackathon-project-delivery to audit my repo, demo link, and submission fields.",
+      "Use $hackathon-project-delivery for a UCWS-ready project package."
+    ],
+    "brandColor": "#B86B43"
+  }
+}

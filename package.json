@@ -1,0 +1,23 @@
+{
+  "name": "hackathon-project-delivery",
+  "version": "0.1.0",
+  "private": false,
+  "description": "A bilingual Codex skill/plugin workflow for shipping UCWS and general hackathon projects with GitHub, public demos, and submission proof.",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "validate": "node tools/validate-structure.mjs",
+    "plugin:install:dry-run": "node tools/install-codex-plugin.mjs",
+    "plugin:install": "node tools/install-codex-plugin.mjs --apply"
+  },
+  "keywords": [
+    "codex",
+    "skill",
+    "plugin",
+    "hackathon",
+    "ucws",
+    "github",
+    "deployment",
+    "submission"
+  ]
+}
