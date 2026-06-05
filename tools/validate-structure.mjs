@@ -19,6 +19,8 @@ const requiredFiles = [
   "skills/hackathon-project-delivery/references/delivery-replay.zh-CN.md",
   "docs/ADAPTATION_GUIDE.md",
   "docs/ADAPTATION_GUIDE.zh-CN.md",
+  "docs/CHECKLIST.md",
+  "docs/CHECKLIST.zh-CN.md",
   "tools/install-codex-plugin.mjs",
   "tools/validate-structure.mjs",
 ];
@@ -50,5 +52,7 @@ const readme = readFileSync("README.md", "utf8");
 const readmeZh = readFileSync("README.zh-CN.md", "utf8");
 assert(readme.includes("[中文](README.zh-CN.md)"), "English README should link Chinese README");
 assert(readmeZh.includes("[English](README.md)"), "Chinese README should link English README");
+assert(readme.includes("Detailed Delivery Gates"), "English README should include detailed gates");
+assert(readmeZh.includes("详细交付关卡"), "Chinese README should include detailed gates");
 
 console.log("structure validation passed");

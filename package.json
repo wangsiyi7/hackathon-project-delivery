@@ -1,6 +1,6 @@
 {
   "name": "hackathon-project-delivery",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": false,
   "description": "A bilingual Codex skill/plugin workflow for shipping UCWS and general hackathon projects with GitHub, public demos, and submission proof.",
   "type": "module",

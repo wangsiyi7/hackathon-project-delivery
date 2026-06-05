@@ -1,6 +1,6 @@
 {
   "name": "hackathon-project-delivery",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A bilingual Codex workflow plugin for turning UCWS and general hackathon ideas into shipped apps, GitHub repositories, public demos, and copy-ready submission packages.",
   "author": {
     "name": "wangsiyi7",
@@ -23,7 +23,7 @@
   "interface": {
     "displayName": "Hackathon Project Delivery",
     "shortDescription": "Ship hackathon apps with GitHub, demos, and proof.",
-    "longDescription": "A bilingual Codex workflow for researching hackathon requirements, shaping a product, building a working app, publishing to GitHub, deploying a public demo, preparing official submission fields, and verifying final readiness for UCWS and future hackathons.",
+    "longDescription": "A bilingual Codex workflow for researching hackathon requirements, shaping a product, building a working app, publishing to GitHub, deploying a public demo, preparing official submission fields, and verifying final readiness for UCWS and future hackathons. Version 0.2 adds finer delivery gates, evidence matrices, and more granular README guidance.",
     "developerName": "wangsiyi7",
     "category": "Productivity",
     "capabilities": [
