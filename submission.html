@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hackathon Project Delivery Submission</title>
+  <meta name="description" content="Copy-ready Project Wall submission page for Hackathon Project Delivery." />
+  <link rel="icon" href="assets/project-logo.png" type="image/png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./">
+      <img src="assets/project-logo.png" alt="" />
+      <span>
+        <strong>Hackathon Project Delivery</strong>
+        <small>Submission page</small>
+      </span>
+    </a>
+    <nav aria-label="Primary">
+      <a href="./">Demo</a>
+      <a href="https://github.com/wangsiyi7/hackathon-project-delivery">GitHub</a>
+    </nav>
+  </header>
+
+  <main class="submission-page">
+    <section class="submission-hero">
+      <p class="eyebrow">Copy-Ready Submission</p>
+      <h1>Hackathon Project Delivery</h1>
+      <p>
+        A bilingual Codex skill and plugin workflow that helps teams turn hackathon ideas into public demos,
+        GitHub repositories, submission evidence, and honest final readiness reports.
+      </p>
+    </section>
+
+    <section class="submission-grid">
+      <article class="field-card">
+        <span>Team / Project Name</span>
+        <button type="button" data-copy="Hackathon Project Delivery">Copy</button>
+        <p>Hackathon Project Delivery</p>
+      </article>
+      <article class="field-card">
+        <span>Team</span>
+        <button type="button" data-copy="Huiyoung">Copy</button>
+        <p>Huiyoung</p>
+      </article>
+      <article class="field-card wide">
+        <span>One-Line Project Idea</span>
+        <button type="button" data-copy="A Codex skill that helps hackathon teams ship working apps, GitHub repositories, public demos, and copy-ready submission evidence.">Copy</button>
+        <p>A Codex skill that helps hackathon teams ship working apps, GitHub repositories, public demos, and copy-ready submission evidence.</p>
+      </article>
+      <article class="field-card wide">
+        <span>Recruitment Expectations</span>
+        <button type="button" data-copy="We are looking for builders interested in agent workflows, developer tooling, submission automation, product documentation, and demo-readiness systems for hackathons.">Copy</button>
+        <p>We are looking for builders interested in agent workflows, developer tooling, submission automation, product documentation, and demo-readiness systems for hackathons.</p>
+      </article>
+      <article class="field-card">
+        <span>Max Team Size</span>
+        <button type="button" data-copy="4">Copy</button>
+        <p>4</p>
+      </article>
+      <article class="field-card">
+        <span>Your Role</span>
+        <button type="button" data-copy="Product Manager / Full-stack Builder">Copy</button>
+        <p>Product Manager / Full-stack Builder</p>
+      </article>
+      <article class="field-card">
+        <span>Demo URL</span>
+        <button type="button" data-copy="https://wangsiyi7.github.io/hackathon-project-delivery/">Copy</button>
+        <p>https://wangsiyi7.github.io/hackathon-project-delivery/</p>
+      </article>
+      <article class="field-card">
+        <span>GitHub Repository URL</span>
+        <button type="button" data-copy="https://github.com/wangsiyi7/hackathon-project-delivery">Copy</button>
+        <p>https://github.com/wangsiyi7/hackathon-project-delivery</p>
+      </article>
+      <article class="field-card">
+        <span>Logo URL</span>
+        <button type="button" data-copy="https://wangsiyi7.github.io/hackathon-project-delivery/assets/project-logo.png">Copy</button>
+        <p>https://wangsiyi7.github.io/hackathon-project-delivery/assets/project-logo.png</p>
+      </article>
+      <article class="field-card">
+        <span>Tech Stack</span>
+        <button type="button" data-copy="Codex Skill, Markdown, JavaScript, HTML, CSS, GitHub Pages, OpenAPI-ready workflow, Local validation scripts, Bilingual documentation">Copy</button>
+        <p>Codex Skill, Markdown, JavaScript, HTML, CSS, GitHub Pages, OpenAPI-ready workflow, Local validation scripts, Bilingual documentation</p>
+      </article>
+    </section>
+
+    <section class="submission-copy">
+      <h2>Project Description</h2>
+      <p>
+        Hackathon Project Delivery is a reusable Codex skill and plugin workflow for shipping hackathon
+        projects end to end. It guides Codex through event research, product framing, app delivery,
+        evidence gates, GitHub publishing, public demo deployment, final submission copy, and blocker
+        reporting.
+      </p>
+      <p>
+        The project was extracted from the LaunchLens UCWS Singapore Hackathon delivery process and
+        generalized for future UCWS, Devpost, demo-day, accelerator, university hackathon, and open-source
+        showcase workflows. Its core principle is simple: the external review path is part of the product.
+      </p>
+      <p>
+        The standalone demo turns the skill into an inspectable workflow console with delivery gates,
+        an evidence matrix, readiness scoring, and a generated Codex prompt for starting a new competition
+        delivery run.
+      </p>
+    </section>
+
+    <section class="copy-zone">
+      <div>
+        <p class="eyebrow">JSON Summary</p>
+        <h2>Machine-readable submission payload.</h2>
+      </div>
+      <textarea rows="15" readonly id="payloadBox"></textarea>
+      <div class="actions">
+        <button type="button" id="copyPayload">Copy Payload</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

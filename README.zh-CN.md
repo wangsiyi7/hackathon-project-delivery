@@ -6,6 +6,15 @@ Hackathon Project Delivery 是一个开源 Codex Skill/插件流程，用于把�
 
 它从 LaunchLens 在 UCWS Singapore Hackathon 2026 的完整交付过程中抽象出来，并被泛化为适用于 **UCWS 以及未来所有黑客松** 的规范流程。它也适用于 Project Wall、Devpost、Demo Day、加速器展示、高校黑客松、内部创新赛和开源项目展示。
 
+## 在线 Demo 和提交页
+
+- Demo: [https://wangsiyi7.github.io/hackathon-project-delivery/](https://wangsiyi7.github.io/hackathon-project-delivery/)
+- 可复制提交页: [https://wangsiyi7.github.io/hackathon-project-delivery/submission.html](https://wangsiyi7.github.io/hackathon-project-delivery/submission.html)
+- GitHub 仓库: [https://github.com/wangsiyi7/hackathon-project-delivery](https://github.com/wangsiyi7/hackathon-project-delivery)
+- 英文提交文件: [`PROJECT_WALL_SUBMISSION.md`](PROJECT_WALL_SUBMISSION.md)
+- 中文翻译: [`PROJECT_WALL_SUBMISSION.zh-CN.md`](PROJECT_WALL_SUBMISSION.zh-CN.md)
+- 机器可读 payload: [`project-payload.json`](project-payload.json)
+
 ## 为什么需要它
 
 黑客松团队很少只是因为想法不够好而失败。更常见的问题发生在最后的公开交付层：
@@ -37,6 +46,12 @@ Hackathon Project Delivery 是一个开源 Codex Skill/插件流程，用于把�
 ```text
 hackathon-project-delivery/
   .codex-plugin/plugin.json                         Codex 插件 manifest
+  index.html                                        独立交互 Demo
+  submission.html                                   可复制提交页
+  PROJECT_WALL_SUBMISSION.md                        英文提交源
+  PROJECT_WALL_SUBMISSION.zh-CN.md                  中文提交翻译
+  project-payload.json                              机器可读提交摘要
+  assets/project-logo.png                           Project Wall 可用 PNG logo
   skills/hackathon-project-delivery/SKILL.md        Codex Skill 指令
   skills/hackathon-project-delivery/agents/         UI 元数据
   skills/hackathon-project-delivery/references/     LaunchLens 案例复盘
@@ -44,6 +59,8 @@ hackathon-project-delivery/
   docs/ADAPTATION_GUIDE.zh-CN.md                    中文适配指南
   docs/CHECKLIST.md                                 英文交付检查清单
   docs/CHECKLIST.zh-CN.md                           中文交付检查清单
+  tools/serve.mjs                                   本地静态 Demo 服务器
+  tools/validate-submission.mjs                     提交资产校验器
   tools/install-codex-plugin.mjs                    dry-run 优先安装脚本
   tools/validate-structure.mjs                      本地结构校验脚本
 ```
@@ -84,6 +101,25 @@ Codex 应该：
 6. 发布 GitHub 并部署公开 Demo。
 7. 校验链接、测试、payload 和最终包。
 8. 明确说明需要凭证的外部阻塞。
+
+本地运行独立 Demo：
+
+```powershell
+npm.cmd run serve
+```
+
+然后打开：
+
+```text
+http://127.0.0.1:8081/
+```
+
+校验仓库和提交包：
+
+```powershell
+npm.cmd run validate
+npm.cmd run validate:submission
+```
 
 ## 详细交付关卡
 

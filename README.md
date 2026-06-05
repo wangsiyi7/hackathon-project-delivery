@@ -6,6 +6,15 @@ Hackathon Project Delivery is an open-source Codex skill/plugin workflow for shi
 
 It was extracted from the LaunchLens UCWS Singapore Hackathon 2026 delivery process and generalized for **UCWS and future hackathons**. It also works for Project Wall, Devpost, demo-day, accelerator, university hackathon, internal innovation, and open-source showcase workflows.
 
+## Live Demo And Submission
+
+- Demo: [https://wangsiyi7.github.io/hackathon-project-delivery/](https://wangsiyi7.github.io/hackathon-project-delivery/)
+- Copy-ready submission page: [https://wangsiyi7.github.io/hackathon-project-delivery/submission.html](https://wangsiyi7.github.io/hackathon-project-delivery/submission.html)
+- GitHub repository: [https://github.com/wangsiyi7/hackathon-project-delivery](https://github.com/wangsiyi7/hackathon-project-delivery)
+- English submission file: [`PROJECT_WALL_SUBMISSION.md`](PROJECT_WALL_SUBMISSION.md)
+- Chinese translation: [`PROJECT_WALL_SUBMISSION.zh-CN.md`](PROJECT_WALL_SUBMISSION.zh-CN.md)
+- Machine-readable payload: [`project-payload.json`](project-payload.json)
+
 ## Why This Exists
 
 Hackathon teams rarely fail only because the idea is weak. They often fail at the final public handoff:
@@ -37,6 +46,12 @@ This skill teaches Codex to treat the external review path as part of the produc
 ```text
 hackathon-project-delivery/
   .codex-plugin/plugin.json                         Codex plugin manifest
+  index.html                                        standalone interactive demo
+  submission.html                                   copy-ready submission page
+  PROJECT_WALL_SUBMISSION.md                        English submission source
+  PROJECT_WALL_SUBMISSION.zh-CN.md                  Chinese submission translation
+  project-payload.json                              machine-readable submission summary
+  assets/project-logo.png                           Project Wall-ready PNG logo
   skills/hackathon-project-delivery/SKILL.md        Codex skill instructions
   skills/hackathon-project-delivery/agents/         UI metadata
   skills/hackathon-project-delivery/references/     LaunchLens case replay
@@ -44,6 +59,8 @@ hackathon-project-delivery/
   docs/ADAPTATION_GUIDE.zh-CN.md                    Chinese adaptation guide
   docs/CHECKLIST.md                                 detailed delivery checklist
   docs/CHECKLIST.zh-CN.md                           Chinese delivery checklist
+  tools/serve.mjs                                   local static demo server
+  tools/validate-submission.mjs                     submission asset validator
   tools/install-codex-plugin.mjs                    dry-run-first installer
   tools/validate-structure.mjs                      local structure validator
 ```
@@ -84,6 +101,25 @@ Expected Codex behavior:
 6. Publish GitHub and deploy a public demo.
 7. Validate links, tests, payload, and final package.
 8. Report any credential-gated blocker explicitly.
+
+Run the standalone demo locally:
+
+```powershell
+npm.cmd run serve
+```
+
+Then open:
+
+```text
+http://127.0.0.1:8081/
+```
+
+Validate the repository and submission package:
+
+```powershell
+npm.cmd run validate
+npm.cmd run validate:submission
+```
 
 ## Detailed Delivery Gates
 

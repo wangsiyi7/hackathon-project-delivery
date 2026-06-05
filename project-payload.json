@@ -1,0 +1,14 @@
+{
+  "projectName": "Hackathon Project Delivery",
+  "team": "Huiyoung",
+  "track": "Skill",
+  "tagline": "A Codex skill for shipping hackathon projects with public demos, GitHub proof, and submission-ready evidence.",
+  "demoUrl": "https://wangsiyi7.github.io/hackathon-project-delivery/",
+  "submissionUrl": "https://wangsiyi7.github.io/hackathon-project-delivery/submission.html",
+  "repoUrl": "https://github.com/wangsiyi7/hackathon-project-delivery",
+  "logoUrl": "https://wangsiyi7.github.io/hackathon-project-delivery/assets/project-logo.png",
+  "techStack": "Codex Skill, Markdown, JavaScript, HTML, CSS, GitHub Pages, OpenAPI-ready workflow, Local validation scripts, Bilingual documentation",
+  "maxTeamSize": 4,
+  "role": "Product Manager / Full-stack Builder",
+  "recruitingRoles": "UI/UX Designer, AI Agent Engineer, Frontend Developer"
+}

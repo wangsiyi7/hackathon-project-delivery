@@ -7,6 +7,8 @@
   "license": "MIT",
   "scripts": {
     "validate": "node tools/validate-structure.mjs",
+    "validate:submission": "node tools/validate-submission.mjs",
+    "serve": "node tools/serve.mjs",
     "plugin:install:dry-run": "node tools/install-codex-plugin.mjs",
     "plugin:install": "node tools/install-codex-plugin.mjs --apply"
   },

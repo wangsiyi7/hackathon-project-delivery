@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hackathon Project Delivery Demo</title>
+  <meta name="description" content="A Codex skill demo for turning hackathon ideas into public demos, GitHub repositories, and submission-ready evidence." />
+  <link rel="icon" href="assets/project-logo.png" type="image/png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Hackathon Project Delivery home">
+      <img src="assets/project-logo.png" alt="" />
+      <span>
+        <strong>Hackathon Project Delivery</strong>
+        <small>Codex skill demo</small>
+      </span>
+    </a>
+    <nav aria-label="Primary">
+      <a href="#workspace">Workspace</a>
+      <a href="#gates">Gates</a>
+      <a href="submission.html">Submission</a>
+      <a href="https://github.com/wangsiyi7/hackathon-project-delivery">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="workspace" id="workspace">
+      <div class="workspace-panel">
+        <p class="eyebrow">Interactive Skill Console</p>
+        <h1>Turn a hackathon idea into a reviewed delivery path.</h1>
+        <p class="lede">
+          This demo shows how the skill guides Codex from event research to a working app, public demo,
+          GitHub repository, submission copy, and final readiness proof.
+        </p>
+
+        <form class="project-form" id="projectForm">
+          <label>
+            Event URL
+            <input id="eventUrl" name="eventUrl" value="https://evol.epicconnector.ai/events/ucws-singapore-hackathon---2026-cxgy/project-wall" />
+          </label>
+          <label>
+            Project idea
+            <textarea id="idea" name="idea" rows="4">Build a reusable Codex workflow that helps teams ship hackathon projects with GitHub, public demos, submission fields, and honest blocker handling.</textarea>
+          </label>
+          <div class="form-grid">
+            <label>
+              Demo URL
+              <input id="demoUrl" name="demoUrl" value="https://wangsiyi7.github.io/hackathon-project-delivery/" />
+            </label>
+            <label>
+              Repository URL
+              <input id="repoUrl" name="repoUrl" value="https://github.com/wangsiyi7/hackathon-project-delivery" />
+            </label>
+          </div>
+          <label>
+            Team
+            <input id="team" name="team" value="Huiyoung" />
+          </label>
+        </form>
+      </div>
+
+      <div class="visual-panel" aria-label="Delivery graph">
+        <canvas id="deliveryCanvas" width="680" height="520"></canvas>
+        <div class="score-card">
+          <span>Readiness</span>
+          <strong id="readinessScore">0%</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="bands" id="gates">
+      <div class="section-title">
+        <p class="eyebrow">Delivery Gates</p>
+        <h2>What the skill asks Codex to prove.</h2>
+      </div>
+      <div class="gate-grid" id="gateGrid"></div>
+    </section>
+
+    <section class="matrix-section">
+      <div class="section-title">
+        <p class="eyebrow">Evidence Matrix</p>
+        <h2>Submission readiness, not just documentation.</h2>
+      </div>
+      <div class="matrix" id="evidenceMatrix"></div>
+    </section>
+
+    <section class="copy-zone">
+      <div>
+        <p class="eyebrow">Codex Prompt</p>
+        <h2>Copy this into Codex for a new event.</h2>
+      </div>
+      <textarea id="generatedPrompt" rows="9" readonly></textarea>
+      <div class="actions">
+        <button id="copyPrompt" type="button">Copy Prompt</button>
+        <a class="button secondary" href="submission.html">Open Submission Page</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
